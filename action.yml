@@ -26,11 +26,11 @@ inputs:
   postgresql host port:
     description: 'POSTGRES_HOST_PORT - host port to connect to postgres port'
     required: false
-    default: '5432'
+    default: 5432
   postgresql container port:
     description: 'POSTGRES_CONTAINER_PORT - container port for the host port to connect to'
     required: false
-    default: '5432'
+    default: 5432
 runs:
   using: 'docker'
   image: 'Dockerfile'
