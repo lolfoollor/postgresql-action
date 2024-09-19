@@ -23,11 +23,11 @@ inputs:
     description: 'POSTGRES_PASSWORD - superuser password'
     required: false
     default: ''
-  postgresql host port:
+  HOST_PORT:
     description: 'POSTGRES_HOST_PORT - host port to connect to postgres port'
     required: false
     default: 5432
-  postgresql container port:
+  CONTAINER_PORT:
     description: 'POSTGRES_CONTAINER_PORT - container port for the host port to connect to'
     required: false
     default: 5432
