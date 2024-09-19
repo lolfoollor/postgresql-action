@@ -1,6 +1,6 @@
 name: 'Setup PostgreSQL'
 description: 'Setup a PostgreSQL database'
-author: 'Harmon'
+author: 'Lolfoollor'
 branding:
   icon: 'database'
   color: 'blue'
@@ -23,6 +23,14 @@ inputs:
     description: 'POSTGRES_PASSWORD - superuser password'
     required: false
     default: ''
+  postgresql host port:
+    description: 'POSTGRES_HOST_PORT - host port to connect to postgres port'
+    required: false
+    default: '5432'
+  postgresql container port:
+    description: 'POSTGRES_CONTAINER_PORT - container port for the host port to connect to'
+    required: false
+    default: '5432'
 runs:
   using: 'docker'
   image: 'Dockerfile'
