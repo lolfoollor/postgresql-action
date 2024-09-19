@@ -9,9 +9,13 @@ See [action.yml](action.yml)
 Basic:
 ```yaml
 steps:
-- uses: harmon758/postgresql-action@v1
+- uses: lolfoollor/postgresql-action@v1.1
   with:
-    postgresql version: '11'  # See https://hub.docker.com/_/postgres for available versions
+    postgresql version: "16.4"
+    postgresql db: {NAME_OF_DB}
+    postgresql user: {NAME_OF_USER}
+    postgresql password: ${{ secrets.{SECRET_PASSWORD_IN_GITHUB} }}
+    postgresql port: 5432 
 ```
 
 # License
